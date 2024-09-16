@@ -7,6 +7,28 @@ const spaceGrotesk = Space_Grotesk({
   display: 'swap',
 })
 
+export const LogoIcon = ({ iconClassName }: { iconClassName?: string }) => {
+  return (
+    <LucideCrown
+      className={cn('size-7 text-primary fill-primary', iconClassName)}
+    />
+  )
+}
+
+export const LogoText = ({ textClassName }: { textClassName?: string }) => {
+  return (
+    <span
+      className={cn(
+        'text-3xl font-bold',
+        spaceGrotesk.className,
+        textClassName
+      )}
+    >
+      Constancy
+    </span>
+  )
+}
+
 export const Logo = ({
   textClassName,
   iconClassName,

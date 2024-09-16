@@ -1,29 +1,12 @@
-import { Logo } from '@/components/logo'
-
-import Image from 'next/image'
-import { RegisterGoal } from './register-goal'
+import { EmptyGoals } from './empty-goals'
+import { Summary } from './summary'
 
 export default function Home() {
+  const goals = ['']
+
   return (
-    <div className='flex flex-col items-center justify-center gap-8 h-full'>
-      <Logo />
-
-      <Image
-        src='/illustrations/personal-goals-asset.svg'
-        alt='Personal Goals Illustration'
-        width={320}
-        height={320}
-        className='fill-none stroke-none'
-      />
-
-      <div className='space-y-5'>
-        <p className='max-w-[320px] text-center leading-relaxed'>
-          Você ainda não cadastrou nenhuma meta, que tal cadastrar uma agora
-          mesmo?
-        </p>
-
-        <RegisterGoal />
-      </div>
+    <div className='max-w-2xl mx-auto'>
+      {goals.length === 0 ? <EmptyGoals /> : <Summary />}
     </div>
   )
 }

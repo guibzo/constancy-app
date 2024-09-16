@@ -30,7 +30,7 @@
   :root {
     --background: 240 7% 8%;
     --foreground: 0 0% 92%;
-    --muted: 240 6.31% 13.09%;
+    --muted: 240 5.88% 20%;
     --muted-foreground: 240 5% 67%;
     --popover: 240 7% 5%;
     --popover-foreground: 0 0% 88%;
@@ -40,13 +40,13 @@
     --input: 240 5.88% 20%;
     --primary: 346.19 64.65% 42.16%;
     --primary-foreground: 346.15 66.1% 88.43%;
-    --secondary: 240 5.88% 20%;
+    --secondary: 258.3 89.5% 66.3%;
     --secondary-foreground: 0 0% 85%;
     --accent: 240 7% 23%;
     --accent-foreground: 240 7% 83%;
     --destructive: 0 84% 49%;
     --destructive-foreground: 0 0% 100%;
-    --ring: 346.19 64.65% 42.16%;
+    --ring: 258.3 89.5% 66.3%;
     --radius: 0.5rem;
   }
 }
